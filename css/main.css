@@ -13,6 +13,11 @@
 .bar-options .box-search input:focus {
   outline: none;
 }
+.bar-options .box-search input:focus::-moz-placeholder {
+  opacity: 0;
+  -moz-transition: 300ms;
+  transition: 300ms;
+}
 .bar-options .box-search input:focus::placeholder {
   opacity: 0;
   transition: 300ms;
@@ -26,7 +31,8 @@ table thead {
   border-width: 1px;
   border-style: solid;
   border-color: rgb(224, 224, 224);
-  border-image: initial;
+  -o-border-image: initial;
+     border-image: initial;
   margin: 0 auto;
 }
 table thead tr {
@@ -40,7 +46,8 @@ table tbody {
   border-width: 1px;
   border-style: solid;
   border-color: rgb(224, 224, 224);
-  border-image: initial;
+  -o-border-image: initial;
+     border-image: initial;
   margin: 0 auto;
 }
 table tbody tr {
@@ -85,7 +92,6 @@ table tbody td .slider {
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 table tbody td .slider:before {
@@ -96,7 +102,6 @@ table tbody td .slider:before {
   left: 4px;
   bottom: 4px;
   background-color: white;
-  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 table tbody td input:checked + .slider {
@@ -106,8 +111,6 @@ table tbody td input:focus + .slider {
   box-shadow: 0 0 1px #2196F3;
 }
 table tbody td input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
   transform: translateX(26px);
 }
 table tbody td .slider.round {
