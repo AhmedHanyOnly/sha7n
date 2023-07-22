@@ -1,0 +1,154 @@
+.bar-options .box-search {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 10px;
+  max-width: 100%;
+}
+.bar-options .box-search input {
+  font-weight: 600;
+  font-size: 14px;
+  width: 270px;
+  border: none;
+}
+.bar-options .box-search input:focus {
+  outline: none;
+}
+.bar-options .box-search input:focus::placeholder {
+  opacity: 0;
+  transition: 300ms;
+}
+
+table {
+  width: 100%;
+}
+table thead {
+  background: rgb(255, 255, 255);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(224, 224, 224);
+  border-image: initial;
+  margin: 0 auto;
+}
+table thead tr {
+  padding: 0 auto;
+}
+table thead th {
+  padding: 10px;
+}
+table tbody {
+  background: rgba(255, 255, 255, 0.8);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(224, 224, 224);
+  border-image: initial;
+  margin: 0 auto;
+}
+table tbody tr {
+  border: 1px solid #ddd;
+}
+table tbody td {
+  padding: 10px;
+  /* Hide default HTML checkbox */
+  /* Rounded sliders */
+}
+table tbody td .fa-whatsapp {
+  width: 25px;
+  height: 25px;
+  color: #fff;
+  background-color: #25d366;
+  border-radius: 50%;
+  padding: 5px;
+}
+table tbody td .date {
+  width: 68px;
+}
+table tbody td .btn-holder button {
+  font-size: 16px;
+  padding: 5px;
+}
+table tbody td .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+table tbody td .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+table tbody td .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+table tbody td .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+table tbody td input:checked + .slider {
+  background-color: #2196F3;
+}
+table tbody td input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+table tbody td input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+table tbody td .slider.round {
+  border-radius: 34px;
+}
+table tbody td .slider.round:before {
+  border-radius: 50%;
+}
+
+.user {
+  width: 40px;
+  display: flex;
+  gap: 5px;
+}
+.user img {
+  width: 100%;
+}
+
+body {
+  font-family: "Cairo", sans-serif !important;
+  color: black;
+  font-size: 14px;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: black;
+}
+
+button {
+  border: none;
+  outline: none;
+}/*# sourceMappingURL=main.css.map */

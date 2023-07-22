@@ -1,0 +1,43 @@
+.main-header {
+  color: white;
+  z-index: 900;
+  direction: rtl;
+  .navbar {
+    .logo {
+      width: 175px !important;
+      margin: 0 10px;
+      img {
+        width: 100% !important;
+      }
+    }
+    .navbar-toggler {
+      outline: none !important;
+      color: $sec-color !important;
+      border: 2px solid $sec-color;
+      &:focus {
+        outline: 2px solid $sec-color !important;
+      }
+    }
+    ul {
+      li {
+        margin: 0 2.5px;
+        a {
+          font-weight: 600;
+          transition: 0.3s;
+          font-size: 14px;
+          text-align: center;
+          &.active {
+            color: $sec-color;
+          }
+          &:hover {
+            scale: 1.02;
+            color: $sec-color;
+            @include maxWidth(md) {
+              background-color: rgba($color: #ddd, $alpha: 0.3);
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "liveSassCompile.settings.partialsList": [
+    "/**/_*.s[ac]ss",
+    "/**/contact-us.scss",
+    "/**/service.scss",
+    "/**/about-us.scss",
+    "/**/price.scss",
+    "/**/service-sub.scss",
+    "/**/login.scss",
+    "/**/sign.scss",
+    "/**/request.scss",
+    "/**/_footer.scss",
+    "/**/sass/**.scss",
+    "/**/landing.scss",
+    "/**/table.scss"
+  ]
+}
